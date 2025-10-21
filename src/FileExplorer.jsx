@@ -11,7 +11,7 @@ function FileExplorer({ fileSystem }) {
             deleguje odpowiedzialność za wyświetlanie do komponentu 
             Details i w zależności albo wyświetla następne foldery
             albo same szczegóły. */}
-            <Directory name={fileSystem.name} type={fileSystem.type} children={fileSystem.children} />
+            <Directory key={fileSystem.id} name={fileSystem.name} type={fileSystem.type} children={fileSystem.children} />
         </>
     )
 }

@@ -12,7 +12,7 @@ function Directory({ name, type, children }) {
                 type === "folder" &&
                 // jeśli typ będzie inny, ten kod się nie wykona.
                 children.map(
-                    (child) => <Directory name={child.name} type={child.type} children={child.children} />
+                    (child) => <Directory key={child.id} name={child.name} type={child.type} children={child.children} />
                 )
             }
         </>
