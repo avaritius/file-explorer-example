@@ -24,8 +24,7 @@ function FileExplorer({ fileSystem }) {
         <>
             <p>{fileSystem.name}, {fileSystem.type}</p>
             {fileSystem.children.map(
-                (x) =>
-                    display(x)
+                (x) => display(x)
 
             )}
         </>
